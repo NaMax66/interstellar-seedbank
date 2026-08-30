@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">A specialized Earth–Mars transport line</title>
+  <desc id="desc">A five-stage transport architecture connecting Earth and Mars with local shuttles, orbital tenders, and a protected interplanetary carrier.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="1" stop-color="#111d31"/>
+    </linearGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67d1ff"/>
+      <stop offset="1" stop-color="#2866cc"/>
+    </linearGradient>
+    <linearGradient id="mars" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff9a68"/>
+      <stop offset="1" stop-color="#b94732"/>
+    </linearGradient>
+    <linearGradient id="carrier" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#50c7c1"/>
+      <stop offset="1" stop-color="#75e0b1"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowOut" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#f3c969"/>
+    </marker>
+    <marker id="arrowBack" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#7ec8ff"/>
+    </marker>
+    <style>
+      .title{font:700 46px Arial,sans-serif;fill:#f5f8ff;letter-spacing:1px}
+      .subtitle{font:400 24px Arial,sans-serif;fill:#aebbd0}
+      .node-title{font:700 22px Arial,sans-serif;fill:#f7f9ff}
+      .node-copy{font:400 17px Arial,sans-serif;fill:#b9c7da}
+      .small{font:600 16px Arial,sans-serif;fill:#d8e2ef;letter-spacing:.5px}
+      .flow-out{font:700 17px Arial,sans-serif;fill:#f3c969;letter-spacing:1px}
+      .flow-back{font:700 17px Arial,sans-serif;fill:#7ec8ff;letter-spacing:1px}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g fill="#ffffff" opacity=".55">
+    <circle cx="92" cy="95" r="1.5"/><circle cx="245" cy="150" r="1"/><circle cx="410" cy="80" r="1.7"/>
+    <circle cx="590" cy="142" r="1.2"/><circle cx="790" cy="90" r="1.4"/><circle cx="1020" cy="130" r="1"/>
+    <circle cx="1260" cy="75" r="1.5"/><circle cx="1485" cy="155" r="1.2"/><circle cx="1520" cy="505" r="1.4"/>
+    <circle cx="70" cy="555" r="1"/><circle cx="310" cy="690" r="1.3"/><circle cx="1175" cy="695" r="1.2"/>
+  </g>
+
+  <text x="800" y="72" text-anchor="middle" class="title">A SPECIALIZED EARTH–MARS TRANSPORT LINE</text>
+  <text x="800" y="112" text-anchor="middle" class="subtitle">No single spacecraft does everything.</text>
+
+  <path d="M245 420 C500 300, 1100 300, 1355 420" fill="none" stroke="#f3c969" stroke-width="5" marker-end="url(#arrowOut)"/>
+  <text x="800" y="278" text-anchor="middle" class="flow-out">OUTBOUND · PEOPLE, EQUIPMENT, BULK CARGO</text>
+
+  <path d="M1355 520 C1100 650, 500 650, 245 520" fill="none" stroke="#7ec8ff" stroke-width="4" stroke-dasharray="13 12" marker-end="url(#arrowBack)"/>
+  <text x="800" y="683" text-anchor="middle" class="flow-back">RETURN · PEOPLE, SAMPLES, HIGH-VALUE PAYLOAD</text>
+
+  <g transform="translate(70 330)">
+    <circle cx="105" cy="120" r="96" fill="url(#earth)" filter="url(#glow)"/>
+    <path d="M45 86 C72 60,92 75,113 57 C135 38,166 48,184 71 C159 78,153 102,132 105 C105 109,90 130,61 121 Z" fill="#6bc98e" opacity=".9"/>
+    <path d="M92 148 C119 131,157 139,178 161 C154 181,128 198,98 190 C73 182,63 162,92 148 Z" fill="#73d19b" opacity=".85"/>
+    <text x="105" y="244" text-anchor="middle" class="node-title">EARTH SURFACE</text>
+    <text x="105" y="271" text-anchor="middle" class="node-copy">Reusable vertical shuttle</text>
+  </g>
+
+  <g transform="translate(365 350)">
+    <rect x="0" y="0" width="260" height="190" rx="28" fill="#142943" stroke="#4da7e8" stroke-width="2"/>
+    <circle cx="130" cy="62" r="35" fill="none" stroke="#62bbf5" stroke-width="6"/>
+    <rect x="93" y="51" width="74" height="22" rx="11" fill="#62bbf5"/>
+    <path d="M85 62 H50 M175 62 H210" stroke="#8ed2ff" stroke-width="5"/>
+    <text x="130" y="125" text-anchor="middle" class="node-title">EARTH TENDER</text>
+    <text x="130" y="153" text-anchor="middle" class="node-copy">Fuel · rescue · rendezvous</text>
+    <text x="130" y="176" text-anchor="middle" class="node-copy">Moves to meet ships in trouble</text>
+  </g>
+
+  <g transform="translate(680 320)">
+    <rect x="0" y="0" width="300" height="250" rx="34" fill="#133337" stroke="#69d6bd" stroke-width="3"/>
+    <ellipse cx="150" cy="72" rx="91" ry="42" fill="none" stroke="url(#carrier)" stroke-width="9"/>
+    <rect x="86" y="57" width="128" height="30" rx="15" fill="#75e0b1"/>
+    <circle cx="150" cy="72" r="12" fill="#e7fff6"/>
+    <g fill="#55bfae" opacity=".85">
+      <rect x="69" y="104" width="34" height="18" rx="6"/><rect x="108" y="108" width="34" height="18" rx="6"/>
+      <rect x="147" y="108" width="34" height="18" rx="6"/><rect x="186" y="104" width="34" height="18" rx="6"/>
+    </g>
+    <text x="150" y="166" text-anchor="middle" class="node-title">PROTECTED CARRIER</text>
+    <text x="150" y="196" text-anchor="middle" class="node-copy">Interplanetary space only</text>
+    <text x="150" y="222" text-anchor="middle" class="node-copy">Reusable shielding · habitat · repair</text>
+  </g>
+
+  <g transform="translate(1035 350)">
+    <rect x="0" y="0" width="260" height="190" rx="28" fill="#34251f" stroke="#e28a5f" stroke-width="2"/>
+    <circle cx="130" cy="62" r="35" fill="none" stroke="#ed9a70" stroke-width="6"/>
+    <rect x="93" y="51" width="74" height="22" rx="11" fill="#ed9a70"/>
+    <path d="M85 62 H50 M175 62 H210" stroke="#ffc0a0" stroke-width="5"/>
+    <text x="130" y="125" text-anchor="middle" class="node-title">MARS TENDER</text>
+    <text x="130" y="153" text-anchor="middle" class="node-copy">Fuel · capture assist · rescue</text>
+    <text x="130" y="176" text-anchor="middle" class="node-copy">Negotiates meeting trajectory</text>
+  </g>
+
+  <g transform="translate(1320 330)">
+    <circle cx="105" cy="120" r="96" fill="url(#mars)" filter="url(#glow)"/>
+    <path d="M35 99 C65 80,84 92,106 79 C137 61,170 70,188 95 C158 112,129 103,110 119 C84 141,58 128,35 99 Z" fill="#d86b4d" opacity=".8"/>
+    <path d="M63 160 C96 142,135 147,170 166" fill="none" stroke="#f2a073" stroke-width="8" opacity=".55"/>
+    <text x="105" y="244" text-anchor="middle" class="node-title">MARS SURFACE</text>
+    <text x="105" y="271" text-anchor="middle" class="node-copy">Cargo pods down · crew taxi up</text>
+  </g>
+
+  <g transform="translate(315 735)">
+    <rect x="0" y="0" width="970" height="90" rx="20" fill="#101d30" stroke="#344b67"/>
+    <text x="485" y="34" text-anchor="middle" class="small">COMMON INTERFACES CONNECT SPECIALIZED VEHICLES</text>
+    <text x="485" y="64" text-anchor="middle" class="node-copy">Standard cargo · fuel transfer · autonomous rendezvous · shared safety protocol</text>
+  </g>
+
+  <text x="800" y="866" text-anchor="middle" class="subtitle">The route is infrastructure. The vehicles are replaceable specialists.</text>
+</svg>
